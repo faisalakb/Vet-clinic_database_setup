@@ -63,13 +63,17 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [VET-CLINIC] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[VET-CLINIC-Database]** s an database project on PostgreSQL. A database project that involves using PostgreSQL. In this project, I used a relational database to create the data structure for a vet clinic
 
 ## 🛠 Built With <a name="built-with"></a>
+- PostgreSQL
+- Github
+- SQL
+- GitFlow
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -100,11 +104,8 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+- An Animal table containing the following columns: Id, Name, Date of birth, Escape attempts, Neutered, Weight
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,7 +113,8 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+coming soon 
+- [Live Demo Link](coming soon)
 
 - [Live Demo Link](<replace-with-your-deployment-URL>)
 
@@ -122,14 +124,22 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+This repository includes files with plain SQL that can be used to recreate the VET CLINIC database:
+
+- Use [schema.sql](./schema.sql) to create all tables.
+- Use [data.sql](./data.sql) to populate tables with sample data.
+- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. 
+**Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 To get a local copy up and running, follow these steps.
-
 ### Prerequisites
 
 In order to run this project you need:
 
+
+- PostgreSQL installed
+- A GitHub Account
+- VS Code 
 <!--
 Example command:
 
@@ -140,41 +150,28 @@ Example command:
 
 ### Setup
 
-Clone this repository to your desired folder:
+- Open PSQL 
+- create a new database using CREATE DATABASE Vet Clinic:
 
 <!--
 Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone https://github.com/faisalakb/Vet-clinic_database_setup
 ```
 --->
 
 ### Install
 
-Install this project with:
+Install this project with: psql installer
 
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
+ connect to database using the command \c Vet Clinic
 
 ### Run tests
 
@@ -208,17 +205,11 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Faisal Mumtaz**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@faisalakb](https://github.com/faisalakb)
+- Twitter: [@faisalakb786](https://twitter.com/Faisalakb786)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/faisal-mumtaz-514a221a6/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -226,11 +217,7 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Making complete Vet clinic database using Postgresql]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -240,7 +227,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/faisalakb/Vet-clinic_database_setup/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -248,9 +235,8 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project, please give it a star and also follow me on GitHub for future projects
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -258,9 +244,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+I would like to thank Microverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
