@@ -22,7 +22,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -41,8 +40,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 # 📖 [VET-CLINIC] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
 **[VET-CLINIC-Database]** s an database project on PostgreSQL. A database project that involves using PostgreSQL. In this project, I used a relational database to create the data structure for a vet clinic
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -52,22 +49,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - GitFlow
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
 
 <details>
 <summary>Database</summary>
@@ -85,16 +66,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-coming soon 
-- [Live Demo Link](coming soon)
-
-- [Live Demo Link](<replace-with-your-deployment-URL>)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -116,13 +87,6 @@ In order to run this project you need:
 - PostgreSQL installed
 - A GitHub Account
 - VS Code 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
 
 ### Setup
 
@@ -153,6 +117,8 @@ To run the project, execute the following command:
 
 To run tests, run the following command:
 
+- npm test
+
 <!--
 Example command:
 
@@ -163,7 +129,7 @@ Example command:
 
 ### Deployment
 
-You can deploy this project using:
+Project deployment: (coming soon)
 
 <!--
 Example:
