@@ -1,4 +1,5 @@
-/* Database schema to keep the structure of entire database. */
+create  database db_vet_clinic
+use db_vet_clinic
 
 create table animals(
     id int,
