@@ -40,7 +40,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 # 📖 [VET-CLINIC] <a name="about-project"></a>
 
-**[VET-CLINIC-Database]** s an database project on PostgreSQL. A database project that involves using PostgreSQL. In this project, I used a relational database to create the data structure for a vet clinic
+**[VET-CLINIC-Database]** is an database project on PostgreSQL. A database project that involves using PostgreSQL. In this project, I used a relational database to create the data structure for a vet clinic
 
 ## 🛠 Built With <a name="built-with"></a>
 - PostgreSQL
