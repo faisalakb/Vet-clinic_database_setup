@@ -6,6 +6,9 @@ create table animals(
     name varchar(20),
     date_of_birth date,
     escape_attempts int,
-    neutered boolean,
+    neutered ,
     weight_kg decimal
 );
+
+ALTER TABLE animals 
+	ADD species varchar(20);
