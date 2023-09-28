@@ -12,3 +12,36 @@ insert into animals  (name, date_of_birth, escape_attempts, neutered, weight_kg)
 insert into animals  (name, date_of_birth, escape_attempts, neutered, weight_kg) values('Ditto','14-May-2022',4,true,22.0);
 
 
+insert into owners (full_name,age) values ('Sam Smith', 34);
+insert into owners (full_name,age) values ('Jennifer Orwell', 19);
+insert into owners (full_name,age) values ('Bob', 45);
+insert into owners (full_name,age) values ('Melody Pond', 77);
+insert into owners (full_name,age) values ('Dean Winchester', 14);
+insert into owners (full_name,age) values ('Jodie Whittaker', 38);
+
+
+insert into species (name) values ('Pokemon');
+insert into species (name) values ('Digimon');
+
+
+/* Modify your inserted animals so it includes the species_id value:
+
+    If the name ends in "mon" it will be Digimon
+    All other animals are Pokemon
+*/
+
+
+update animals set species_id=2 where name like '%mon';
+
+update animals set species_id=1 where name not like '%mon';
+
+update animals set owner_id=1 where name = 'Agumon'
+
+update animals set owner_id=2 where name = 'Gabumon' or name='Pikachu'
+
+update animals set owner_id=3 where name = 'Devimon' or name='Plantmon';
+
+update animals set owner_id=4 where name = 'Charmander' or name='Squirtle' or name='Blossom';
+
+update animals set owner_id=5 where name = 'Angemon' or name='Boarmon';
+
