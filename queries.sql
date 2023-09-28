@@ -151,3 +151,11 @@ inner join owners o
 on a.owner_id=o.Id
 where full_name='Dean Winchester' and a.escape_attempts=0
 
+
+select  count(a.name)as total,o.full_name
+ from animals a
+inner join owners o
+on a.owner_id=o.Id
+group by o.full_name
+order by total desc
+limit 1
