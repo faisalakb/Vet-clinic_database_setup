@@ -12,3 +12,49 @@ create table animals(
 
 ALTER TABLE animals 
 	ADD species varchar(20);
+
+create table owners(
+	id int primary key GENERATED ALWAYS AS IDENTITY,
+	full_name varchar(255),
+	age int
+)
+
+create table species(
+	id int primary key GENERATED ALWAYS AS IDENTITY,
+	name varchar(50)
+	
+)
+
+
+/* Modify animals table:
+
+    Make sure that id is set as auto incremented PRIMARY KEY
+    Remove column species
+    Add column species_id which is a foreign key referencing species table
+    Add column owner_id which is a foreign key referencing the owners table
+ */
+
+/* I already apply the auto increment*/
+
+alter table animals 
+add constraint pk_animal_id
+primary key(id)
+
+alter table animals 
+drop column species
+
+
+alter table animals 
+add column species_id int 
+
+alter table animals
+add constraint FK_animal_species
+foreign key(species_id) references species(id)
+
+alter table animals
+add column owner_id int
+
+alter table animals
+add constraint fk_owners_id
+foreign key (owner_id) references owners (id)
+

@@ -103,3 +103,59 @@ select species, min(weight_kg), max(weight_kg) from animals group by species;
 SELECT species, AVG(escape_attempts) AS average_escape_attempts FROM animals
 WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'
 GROUP BY species;
+
+/* Write queries (using JOIN) to answer the following questions:
+
+    What animals belong to Melody Pond?
+    List of all animals that are pokemon (their type is Pokemon).
+    List all owners and their animals, remember to include those that don't own any animal.
+    How many animals are there per species?
+    List all Digimon owned by Jennifer Orwell.
+    List all animals owned by Dean Winchester that haven't tried to escape.
+    Who owns the most animals?
+*/
+
+select * from animals a
+inner join owners o
+on a.owner_id=o.Id
+where full_name='Melody Pond'
+
+
+select * from animals a
+inner join species s
+on a.species_id=s.id
+where s.name='Pokemon'
+
+select * from animals a
+full outer join owners o
+on  a.owner_id=o.Id
+where a.owner_id is null
+
+
+select s.name, count(a.name)as Animal_count from animals a
+inner join species s
+on a.species_id=s.id
+group by s.name
+
+
+select * from animals a
+inner join species s
+on a.species_id=s.id
+inner join owners o
+on a.owner_id=o.id
+where s.name= 'Digimon' and o.full_name= 'Jennifer Orwell'
+
+
+select * from animals a
+inner join owners o
+on a.owner_id=o.Id
+where full_name='Dean Winchester' and a.escape_attempts=0
+
+
+select  count(a.name)as total,o.full_name
+ from animals a
+inner join owners o
+on a.owner_id=o.Id
+group by o.full_name
+order by total desc
+limit 1
