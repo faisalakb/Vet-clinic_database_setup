@@ -80,3 +80,4 @@ create table visits(
 	FOREIGN KEY (animals_id) REFERENCES animals (id),
 	FOREIGN KEY (vet_id) REFERENCES vets (id)	
 )
+
