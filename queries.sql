@@ -238,3 +238,10 @@ ORDER BY total DESC
 LIMIT 1;
 
 
+
+
+/*Before and After applying index to check the optimaization*/
+
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animals_id = 4;
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
